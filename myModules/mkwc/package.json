@@ -1,0 +1,11 @@
+{
+  "name": "mkwc",
+  "version": "0.1.0",
+  "dependencies": {
+    "@material/mwc-icon-button": "^0.14.1",
+    "@material/mwc-button": "^0.14.1",
+    "lit-element": "^2.3.1",
+    "mk-utils": "file:../mk-utils",
+    "mk-web-utils": "file:../mk-web-utils"
+  }
+}
