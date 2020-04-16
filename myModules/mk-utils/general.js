@@ -8,3 +8,8 @@ export const mapValuesAndKeys = (_, iteratee, object) => _.reduce.convert({cap: 
   const [newValue, newKey] = iteratee(value, key) || [];
   return Object.assign(result, {[newKey]: newValue})
 }, {}, object);
+
+// Does no operation to given template literal. Can be used to trigger syntax highlighting.
+export const noopTag = (_) => (strings, ...keys) =>
+  _.flow([_.zip, _.flatten, _.initial, _.map(String), _.join('')])(strings, keys);
+

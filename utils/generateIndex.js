@@ -1,14 +1,14 @@
 import fs from 'fs';
 import _ from 'lodash/fp.js';
+import {noopTag} from 'mk-utils/general.js';
 import {headerHeight, namePrefix} from '../config.js';
 import analyticsScript from './generateIndex/analyticsScript.js';
 import preRender from './generateIndex/preRender.js';
 import preloadFirebaseAndApp from './generateIndex/preloadFirebaseAndApp.js';
 import initializeFirebaseAndApp from './generateIndex/initializeFirebaseAndApp.js';
 
-const noopTag = (strings, ...keys) => _.flow([_.zip, _.flatten, _.initial, _.map(String), _.join('')])(strings, keys);
 // to trigger syntax highlighting
-const css = noopTag;
+const css = noopTag(_);
 
 const faviconPath = '/resources/images/favicon.ico';
 const fontsRootPath =  '/resources/fonts/';
