@@ -24,6 +24,7 @@ customElements.define('mk-header', class extends LitElement {
         top: 0;
         position: fixed;
         width: 100%;
+        transition: background-color 0.2s ease;
         z-index: var(--layer-header);
       }
       :host([scrolled-down]) {
