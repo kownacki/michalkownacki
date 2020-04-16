@@ -1,5 +1,4 @@
 import {LitElement, html, css} from 'lit-element';
-import '@material/mwc-button';
 import sharedStyles from '../styles/shared-styles.js'
 import fb from '../utils/firebase.js';
 import './mk-heading.js';
@@ -39,10 +38,6 @@ customElements.define('mk-banner', class extends LitElement {
         .rich=${true}
         .ready=${this.ready}>
       </mk-heading>
-      <mwc-button
-        .label=${'More'}
-        .raised=${true}>
-      </mwc-button>
     `;
   }
 });
