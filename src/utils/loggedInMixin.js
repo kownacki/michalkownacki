@@ -3,7 +3,6 @@ export default (propName, Class) => {
   return class extends Class {
     constructor(...args) {
       super(...args);
-      this[propName] = true;
       unsubscribe = firebase.auth().onAuthStateChanged((user) => this[propName] = Boolean(user));
     }
     disconnectedCallback() {
