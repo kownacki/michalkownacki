@@ -29,7 +29,6 @@
     "rollup-plugin-terser": "^5.1.2"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-build-inline": "git+https://github.com/kownacki/ckeditor5-build-inline.git#stable",
     "@material/mwc-button": "^0.14.1",
     "@material/mwc-icon": "^0.14.1",
     "@material/mwc-icon-button": "^0.14.1",

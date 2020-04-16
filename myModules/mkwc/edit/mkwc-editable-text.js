@@ -67,7 +67,7 @@ export default class extends LitElement {
   }
   async _setCkeditor() {
     await Promise.all([
-      import('/node_modules/@ckeditor/ckeditor5-build-inline/build/ckeditor.js'),
+      import('@ckeditor/ckeditor5-build-inline/build/ckeditor.js'),
       moveOutFromShadowDom(this._editable),
     ]);
     this._editor = await InlineEditor.create(
