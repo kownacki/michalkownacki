@@ -174,12 +174,6 @@ export default class extends LitElement {
         /*todo background only to #editable */
         background: rgba(var(--placeholder-color-rgb), 0.5);
       }
-      ::slotted(:focus)  {
-        z-index: var(--layer-header-1);
-        position: relative;
-        /* todo sometimes not working when clicked too fast on load */
-        background: white
-      }
       .edit {
         margin-top: 5px;
         justify-content: flex-end;
@@ -192,7 +186,6 @@ export default class extends LitElement {
         position: absolute;
         top: 100%;
         right: 0;
-        z-index: var(--layer-header-1);
       }
       mwc-button {
         --mdc-theme-primary: white;
