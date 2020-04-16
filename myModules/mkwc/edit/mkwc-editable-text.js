@@ -73,6 +73,17 @@ export default class extends LitElement {
     this._editor = await InlineEditor.create(
       this._editable,
       {
+        fontColor: {
+          colors: [
+            {
+              color: 'var(--primary-color)',
+              label: 'Primary'
+            },
+          ],
+          columns: 1,
+          documentColors: 0,
+          // ...
+        },
         mediaEmbed: {
           previewsInData: true
         },
@@ -94,7 +105,14 @@ export default class extends LitElement {
              }
           ]
         },
-        ...(this.richConfig === 'mosaic'
+        ...(this.richConfig === 'heading' ? {
+              removePlugins: _.flow([
+                _.map(_.get('pluginName')),
+                _.without(['Essentials', 'Autoformat', 'Alignment', 'Bold', 'Font', 'Italic', 'Paragraph']),
+              ])(InlineEditor.builtinPlugins),
+              toolbar: ['bold', 'italic', 'fontColor', 'alignment', 'undo', 'redo'],
+            }
+          : this.richConfig === 'mosaic'
           ? {
               removePlugins: _.flow([
                 _.map(_.get('pluginName')),

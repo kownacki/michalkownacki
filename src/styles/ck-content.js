@@ -306,6 +306,7 @@ export default css`
   .ck-content {
     padding: 0 !important;
     border: 1px solid transparent;
+    overflow-x: hidden !important;
   }
   .ck-content > :first-child {
     margin-top: 0 !important;
@@ -346,10 +347,5 @@ export default css`
   .ck-content .table table td, .ck-content .table table th {
     padding: 20px 40px !important;
     border: none !important;
-  }
-  @media all and (max-width: 599px) {
-    .ck-content p, .ck-content ul {
-      font-size: 16px;
-    }
   }
 `;

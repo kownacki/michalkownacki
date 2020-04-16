@@ -27,7 +27,12 @@ customElements.define('mk-page', class extends dbSyncMixin('_page', LitElement) 
   }
   render() {
     return html`
-      <mk-banner .uid=${'landing'}></mk-banner>
+      <mk-banner
+        .uid=${'landing'}
+        .headingPath=${this.path && this.path.extend('heading')}
+        .heading=${_.get('heading', this._page)}
+        .ready=${this.ready}>
+      </mk-banner>
       ${_.map((section) => html`
         <mk-section
           .uid=${section}

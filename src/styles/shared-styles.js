@@ -31,12 +31,11 @@ export default css`
   }
   h1, h2, h3 {
     word-break: break-word;
-    color: var(--secondary-color);
     font-weight: 300;
     margin: 0;
+    text-align: center;
   }
   .content-heading {
-    text-align: center;
     padding: 0 20px;
     margin: 30px auto;
     width: 800px;
