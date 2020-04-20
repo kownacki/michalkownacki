@@ -1,5 +1,6 @@
 import {LitElement, html, css} from 'lit-element';
 import '../fixes/mwc-icon-button-fixed.js';
+import '../mkwc-loading-dots.js';
 import './mkwc-image-upload.js';
 import readBlobOrFile from 'mk-web-utils/readBlobOrFile.js';
 import fitAndCompress from 'mk-web-utils/fitAndCompress.js';
@@ -80,6 +81,7 @@ export default class extends LitElement {
   render() {
     return html`
       <div class="container">
+        ${this.ready ? '' : html`<mkwc-loading-dots></mkwc-loading-dots>`}
         ${!this.src ? '' : html`<img class="image" .src=${this.src}>`}
         ${!this.enableEditing || !this.ready ? '' : html`
           <mkwc-image-upload id="upload"></mkwc-image-upload>

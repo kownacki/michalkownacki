@@ -1,5 +1,5 @@
 export default {
-  css: `
+  css: (small) => `
     .loading {
       font-family: sans-serif;
       position: absolute;
@@ -13,7 +13,7 @@ export default {
       justify-content: center;
     }
     .loading-dots {
-      font-size: 50px;
+      font-size: ${small ? '30' : '50'}px;
     }
     noscript {
       text-align: center;

@@ -1,5 +1,6 @@
 import {LitElement, html, css} from 'lit-element';
 import moveOutFromShadowDom from 'mk-web-utils/moveOutFromShadowDom.js';
+import '../mkwc-loading-dots.js';
 import '@material/mwc-button';
 
 export default class extends LitElement {
@@ -214,6 +215,7 @@ export default class extends LitElement {
   }
   render() {
     return html`
+      ${this.ready ? '' : html`<mkwc-loading-dots></mkwc-loading-dots>`}
       <slot id="text"></slot>
       ${!this.enableEditing || !this.showControls ? '' : html`
         <div class="edit">
