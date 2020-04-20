@@ -1,7 +1,7 @@
 import fs from 'fs';
 import _ from 'lodash/fp.js';
 import {noopTag} from 'mk-utils/general.js';
-import {headerHeight, namePrefix} from '../config.js';
+import {apiKey, headerHeight, namePrefix} from '../config.js';
 import analyticsScript from './generateIndex/analyticsScript.js';
 import preRender from './generateIndex/preRender.js';
 import preloadFirebaseAndApp from './generateIndex/preloadFirebaseAndApp.js';
@@ -27,7 +27,7 @@ const scripts = [
 const firebaseRootPath = '/__/firebase/7.11.0/';
 const firebaseLibs = ['app', 'auth', 'firestore', 'storage'];
 const firebaseInitializeOptions = {
-  apiKey: "AIzaSyBh7ZSyUBAMtrzxVaG0A5eMCKO-HnchP8I",
+  apiKey,
   authDomain: "pl-michalkownacki.firebaseapp.com",
   databaseURL: "https://pl-michalkownacki.firebaseio.com",
   projectId: "pl-michalkownacki",
