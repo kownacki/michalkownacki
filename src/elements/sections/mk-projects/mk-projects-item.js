@@ -17,32 +17,48 @@ customElements.define('mk-projects-item', class extends LitElement {
       :host {
         --border: solid 1px var(--divider-color);
       }
-      .image-container {
-        position: relative;
-        border: var(--border);
-        padding-bottom: calc(2/3 * (100% - 2px));
-      }
-      mk-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        height: 100%;
-        border-radius: 4px;
-      }
       .header {
         text-align: center;
         margin: 20px 0;
         padding: 0 20px;
       }
-      .bottom {
+      .image-container {
+        position: relative;
+        border: var(--border);
+        padding-bottom: calc(2/3 * (100% - 2px));
+        align-items: center;
+      }
+      mk-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+      }
+      .links-container {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        transition: background-color 0.5s ease;
+      }
+      .image-container:hover .links-container {
+        background-color: rgba(var(--primary-color-rgb), 0.75);
+      }
+      .image-container:hover .links {
+        display: block;
+      }
+      .links {
+        display: none;
         text-align: center;
-        margin: 20px 0;
       }
       a {
         text-decoration: none;
-        color: var(--primary-color);
+        color: white;
         display: inline-block;
         padding: 5px 0;
       }
@@ -76,11 +92,15 @@ customElements.define('mk-projects-item', class extends LitElement {
           .image=${_.get('image', this.project)}
           .ready=${this.ready}>
         </mk-image>
-      </div>
-      <div class="bottom">
-        <a href="${_.get('url', this.project)}" target="_blank">Visit website <mwc-icon>launch</mwc-icon></a>
-        <br>
-        <a href="#" target="_blank">View code <mwc-icon>launch</mwc-icon></a>   
+        <div class="links-container">
+          <div class="links bigger-text">
+            <a href="${_.get('links.url', this.project)}" target="_blank">Visit website <mwc-icon>launch</mwc-icon></a>
+            ${!_.get('links.code', this.project) ? '' : html`
+              <br>
+              <a href="${_.get('links.code', this.project)}" target="_blank">View code <mwc-icon>launch</mwc-icon></a>   
+            `}
+          </div>
+        </div>
       </div>
     `;
   }
