@@ -10,13 +10,14 @@ customElements.define('mk-header-logo', class extends LitElement {
   static get styles() {
     return css`
       :host {
+        display: flex;
+        justify-content: center;
       }
       a {
         line-height: 1em;
         padding: 15px;
         font-size: 30px;
         display: block;
-        width: 300px;
         color: white;
         text-decoration: none;
       }

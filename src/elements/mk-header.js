@@ -32,7 +32,6 @@ customElements.define('mk-header', class extends LitElement {
         box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
       }
       header {
-        display: flex;
       }
       nav {
         align-self: flex-start;
