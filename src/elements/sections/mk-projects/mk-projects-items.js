@@ -16,7 +16,7 @@ customElements.define('mk-projects-items', class extends LitElement {
         display: flex;
         width: 1244px;
         max-width: calc(100% - 40px);
-        margin: 60px auto;
+        margin: 0 auto;
         padding: 0 20px;
       }
       :host > * {
@@ -28,7 +28,7 @@ customElements.define('mk-projects-items', class extends LitElement {
           flex-direction: column;
         }
         :host > * {
-          margin: auto;
+          margin: 10px auto 30px;
           width: 602px;
           max-width: 100%;
         }

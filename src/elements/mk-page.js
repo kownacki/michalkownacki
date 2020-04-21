@@ -24,7 +24,7 @@ customElements.define('mk-page', class extends dbSyncMixin('_page', LitElement) 
   static get styles() {
     return [sharedStyles, css`
       mk-section {
-        margin: 100px 0;
+        margin: 80px 0;
       }
     `];
   }
