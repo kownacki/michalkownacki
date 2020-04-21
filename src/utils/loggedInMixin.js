@@ -1,9 +1,14 @@
 export default (propName, Class) => {
   let unsubscribe;
+  let editingEnabled;
   return class extends Class {
     constructor(...args) {
       super(...args);
-      unsubscribe = firebase.auth().onAuthStateChanged((user) => this[propName] = Boolean(user));
+      addEventListener('toggle-editing', (event) => {
+        editingEnabled = event.detail;
+        this[propName] = event.detail || Boolean(firebase.auth().currentUser)
+      });
+      unsubscribe = firebase.auth().onAuthStateChanged((user) => this[propName] = editingEnabled || Boolean(user));
     }
     disconnectedCallback() {
       unsubscribe();

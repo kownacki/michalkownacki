@@ -2,6 +2,7 @@ import {LitElement, html, css} from 'lit-element';
 import sharedStyles from '../../styles/shared-styles.js';
 import fb from '../../utils/firebase.js';
 import '../mk-article.js';
+import '../mk-heading.js';
 import('./mk-contact/mk-contact-form.js');
 
 export default class MkContact extends LitElement {
@@ -33,7 +34,8 @@ export default class MkContact extends LitElement {
         .path=${this.path && this.path.extend('direct.article')}
         .text=${_.get('direct.article', this.section)}
         .ready=${this.ready}
-        .rich=${true}>
+        .rich=${true}
+        .richConfig=${'mosaic'}>
       </mk-article>
     `;
   }

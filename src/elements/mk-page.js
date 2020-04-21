@@ -43,7 +43,7 @@ customElements.define('mk-page', class extends dbSyncMixin('_page', LitElement) 
           .section=${_.get(`sections.${section}`, this._page)}
           .ready=${this.ready}>
         </mk-section>
-      `, ['projects', 'how-i-create', 'contact'])}
+      `, ['projects', 'how-i-create', 'cms', 'contact'])}
     `;
   }
 });

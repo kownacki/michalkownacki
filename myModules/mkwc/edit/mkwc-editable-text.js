@@ -117,7 +117,7 @@ export default class extends LitElement {
           ? {
               removePlugins: _.flow([
                 _.map(_.get('pluginName')),
-                _.without(['Essentials', 'Autoformat', 'Bold', 'Italic', 'Link', 'List', 'Paragraph']),
+                _.without(['Essentials', 'Autoformat', 'Alignment', 'Bold', 'Italic', 'Link', 'List', 'Paragraph']),
               ])(InlineEditor.builtinPlugins),
               toolbar: ['bold', 'italic', 'link', 'bulletedList', 'numberedList', 'undo', 'redo'],
             }

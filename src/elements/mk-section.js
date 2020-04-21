@@ -5,6 +5,7 @@ import fb from '../utils/firebase.js';
 import './mk-heading.js';
 import './sections/mk-projects.js';
 import './sections/mk-how-i-create.js';
+import './sections/mk-cms.js';
 import './sections/mk-contact.js';
 
 customElements.define('mk-section', class extends LitElement {
