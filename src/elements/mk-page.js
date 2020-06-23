@@ -1,7 +1,9 @@
 import {LitElement, html, css} from 'lit-element';
 import dbSyncMixin from 'mkwc/dbSyncMixin.js';
+import removeHtml from 'mk-web-utils/removeHtml.js';
 import sharedStyles from '../styles/shared-styles.js';
 import fb from '../utils/firebase.js';
+import setDocumentDescription from '../utils/setDocumentDescription.js';
 import './mk-banner.js';
 import './mk-section.js';
 
@@ -17,6 +19,12 @@ customElements.define('mk-page', class extends dbSyncMixin('_page', LitElement) 
       await this.updateComplete;
       this.path = fb.path(`pages/${this.uid}`);
     })();
+  }
+  updated(changedProperties) {
+    if (changedProperties.has('ready') && this.ready) {
+      setDocumentDescription(removeHtml(_.get('heading', this._page), ' '));
+    }
+    super.updated(changedProperties);
   }
   getData(path) {
     return fb.get(path);
