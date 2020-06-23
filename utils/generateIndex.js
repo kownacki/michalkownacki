@@ -10,6 +10,7 @@ import initializeFirebaseAndApp from './generateIndex/initializeFirebaseAndApp.j
 // to trigger syntax highlighting
 const css = noopTag(_);
 
+const title = 'Michał Kownacki';
 const faviconPath = '/resources/images/favicon.ico';
 const fontsRootPath =  '/resources/fonts/';
 const fonts = [
@@ -44,7 +45,7 @@ const indexHtml = `
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title></title>
+  <title>${title}</title>
   <meta name="description">
   
   <link rel="shortcut icon" href="${faviconPath}">
