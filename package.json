@@ -39,8 +39,8 @@
     "lit-element": "^2.3.1",
     "lit-html": "^1.2.1",
     "mk-firebase-utils": "git+https://github.com/kownacki/mk-firebase-utils.git#master",
+    "mk-frontend-web-utils": "git+https://github.com/kownacki/mk-frontend-web-utils.git#master",
     "mk-js-utils": "git+https://github.com/kownacki/mk-js-utils.git#master",
-    "mk-web-utils": "file:myModules/mk-web-utils",
     "mkwc": "file:myModules/mkwc"
   }
 }

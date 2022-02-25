@@ -1,5 +1,5 @@
 import {LitElement, html, css} from 'lit-element';
-import {dynamicElement} from 'mk-web-utils/litElement.js'
+import {staticElement} from 'mk-frontend-web-utils/lit';
 import sharedStyles from "../styles/shared-styles";
 import ckContent from '../styles/ck-content.js';
 import './mkwc/mk-text.js';
@@ -37,7 +37,7 @@ export default class MkHeading extends LitElement {
         .rich=${this.rich}
         .richConfig=${'heading'}
         .ready=${this.ready}>
-        ${dynamicElement(this, 'heading', `h${this.level}`, {}, this.rich ? {class: 'ck-content'} : {})}
+        ${staticElement(this, 'heading', `h${this.level}`, {}, this.rich ? {class: 'ck-content'} : {})}
       </mk-text>
       <mk-content-label .name=${`Heading ${this.level}`}></mk-content-label>
     `;

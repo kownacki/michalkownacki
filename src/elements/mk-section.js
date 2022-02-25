@@ -1,5 +1,5 @@
 import {LitElement, html, css} from 'lit-element';
-import {dynamicElement} from 'mk-web-utils/litElement.js';
+import {staticElement} from 'mk-frontend-web-utils/lit';
 import sharedStyles from '../styles/shared-styles.js';
 import fb from '../utils/firebase.js';
 import './mk-heading.js';
@@ -33,7 +33,7 @@ customElements.define('mk-section', class extends LitElement {
         .text=${_.get('heading', this.section)}
         .ready=${this.ready}>
       </mk-heading>
-      ${this.uid && dynamicElement(this, this.uid, `mk-${this.uid}`, {
+      ${this.uid && staticElement(this, this.uid, `mk-${this.uid}`, {
         path: this.path,
         section: this.section,
         ready: this.ready,

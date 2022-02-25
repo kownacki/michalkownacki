@@ -1,9 +1,9 @@
 import {LitElement, html, css} from 'lit-element';
+import {fitAndCompress} from 'mk-frontend-web-utils/fitAndCompress';
+import {readBlobOrFile} from 'mk-frontend-web-utils/readBlobOrFile';
 import '../fixes/mwc-icon-button-fixed.js';
 import '../mkwc-loading-dots.js';
 import './mkwc-image-upload.js';
-import readBlobOrFile from 'mk-web-utils/readBlobOrFile.js';
-import fitAndCompress from 'mk-web-utils/fitAndCompress.js';
 
 export default class extends LitElement {
   static get properties() {

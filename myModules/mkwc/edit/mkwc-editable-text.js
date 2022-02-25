@@ -1,7 +1,7 @@
 import {LitElement, html, css} from 'lit-element';
-import moveOutFromShadowDom from 'mk-web-utils/moveOutFromShadowDom.js';
-import '../mkwc-loading-dots.js';
 import '@material/mwc-button';
+import {moveOutFromShadowDom} from 'mk-frontend-web-utils/moveOutFromShadowDom';
+import '../mkwc-loading-dots.js';
 
 export default class extends LitElement {
   static get properties() {

@@ -1,4 +1,4 @@
-import loadingDots from 'mk-web-utils/loadingDots.js'
+import {loadingDots} from 'mk-frontend-web-utils/loadingDots.js';
 
 export default `
   <style>

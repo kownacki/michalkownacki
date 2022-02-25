@@ -6,7 +6,7 @@
     "@material/mwc-icon-button": "^0.14.1",
     "@material/mwc-button": "^0.14.1",
     "lit-element": "^2.3.1",
-    "mk-js-utils": "git+https://github.com/kownacki/mk-js-utils.git#master",
-    "mk-web-utils": "file:../mk-web-utils"
+    "mk-frontend-web-utils": "git+https://github.com/kownacki/mk-frontend-web-utils.git#master",
+    "mk-js-utils": "git+https://github.com/kownacki/mk-js-utils.git#master"
   }
 }
