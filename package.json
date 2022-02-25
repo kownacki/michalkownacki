@@ -38,6 +38,7 @@
     "@polymer/paper-spinner": "^3.0.2",
     "lit-element": "^2.3.1",
     "lit-html": "^1.2.1",
+    "mk-firebase-utils": "git+https://github.com/kownacki/mk-firebase-utils.git#master",
     "mk-utils": "file:myModules/mk-utils",
     "mk-web-utils": "file:myModules/mk-web-utils",
     "mkwc": "file:myModules/mkwc"

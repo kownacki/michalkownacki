@@ -1,3 +1,3 @@
-import firebaseUtils from 'mk-utils/firebase.js';
+import {firebaseUtils} from 'mk-firebase-utils';
 
 export default firebaseUtils(_, firebase.firestore(), firebase.storage());
