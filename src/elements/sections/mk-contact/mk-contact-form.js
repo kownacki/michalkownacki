@@ -3,7 +3,7 @@ import '@material/mwc-icon-button';
 import '@material/mwc-textfield';
 import 'mkwc/fixes/mwc-textarea-fixed.js';
 import {scrollOffset} from '../../../../config.js';
-import {sleep, isMailValid, mapValuesAndKeys} from 'mk-utils/general.js'
+import {sleep, isMailValid, mapValuesAndKeys} from 'mk-js-utils';
 import sharedStyles from "../../../styles/shared-styles.js";
 
 const FIELDS = ['name', 'email', 'text'];

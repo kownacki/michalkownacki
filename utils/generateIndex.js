@@ -1,6 +1,6 @@
 import fs from 'fs';
 import _ from 'lodash/fp.js';
-import {noopTag} from 'mk-utils/general.js';
+import {noopTag} from 'mk-js-utils';
 import {apiKey, headerHeight, namePrefix} from '../config.js';
 import analyticsScript from './generateIndex/analyticsScript.js';
 import preRender from './generateIndex/preRender.js';

@@ -1,4 +1,4 @@
-import {sleep} from 'mk-utils/general.js';
+import {sleep} from 'mk-js-utils';
 
 export default async (contentsElement) => {
   await sleep();

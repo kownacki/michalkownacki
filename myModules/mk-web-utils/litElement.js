@@ -1,4 +1,4 @@
-import {mapValuesAndKeys} from 'mk-utils/general.js';
+import {mapValuesAndKeys} from 'mk-js-utils';
 
 //todo How about GC
 const memoizedParse =_.memoize(JSON.parse);
