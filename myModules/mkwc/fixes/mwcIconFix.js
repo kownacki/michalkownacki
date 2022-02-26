@@ -1,5 +1,6 @@
 import {css} from 'lit-element';
 
+// todo is this fixed text shadow necessary?
 // 1. Allows adding
 export default (MwcIcon) =>
   class extends MwcIcon {

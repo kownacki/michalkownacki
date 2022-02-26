@@ -29,11 +29,11 @@
     "rollup-plugin-terser": "^5.1.2"
   },
   "dependencies": {
-    "@material/mwc-button": "^0.14.1",
-    "@material/mwc-icon": "^0.14.1",
-    "@material/mwc-icon-button": "^0.14.1",
-    "@material/mwc-textarea": "^0.14.1",
-    "@material/mwc-textfield": "^0.14.1",
+    "@material/mwc-button": "^0.25.3",
+    "@material/mwc-icon": "^0.25.3",
+    "@material/mwc-icon-button": "^0.25.3",
+    "@material/mwc-textarea": "^0.25.3",
+    "@material/mwc-textfield": "^0.25.3",
     "@polymer/iron-ajax": "^3.0.1",
     "@polymer/paper-spinner": "^3.0.2",
     "lit-element": "^2.3.1",

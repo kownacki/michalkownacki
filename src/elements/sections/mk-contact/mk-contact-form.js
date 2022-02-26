@@ -66,7 +66,7 @@ customElements.define('mk-contact-form', class extends LitElement {
       mwc-textarea-fixed {
         display: block;
         height: 250px;
-        --mdc-icon-divider-color: var(--divider-color);
+        --mdc-textarea-fixed-divider-color: var(--divider-color);
       }
       mwc-icon-button {
         color: var(--primary-color);

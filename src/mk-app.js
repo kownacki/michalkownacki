@@ -15,11 +15,7 @@ customElements.define('mk-app', class extends LitElement {
     };
   }
   static get styles() {
-    return [sharedStyles, css`
-      :host {
-        --mdc-theme-primary: var(--primary-color);
-      }
-    `];
+    return sharedStyles;
   }
   render() {
     return html`

@@ -72,6 +72,7 @@ const indexHtml = `
       --primary-color-rgb: 121, 134, 203;
       --secondary-color: #263238;
       --secondary-color-rgb: 117, 117, 117;
+      --text-color: var(--secondary-color);
       --placeholder-color: var(--paper-grey-500);
       --placeholder-color-rgb: 158, 158, 158;
       --divider-color: rgba(0, 0, 0, 0.12);
@@ -86,7 +87,10 @@ const indexHtml = `
       --layer-profitroom: 999; /* Profitroom snippet layer*/
       --layer-profitroom-1: 1000;
       font-family: 'Muli', sans-serif;
-      color: var(--secondary-color);
+      color: var(--text-color);
+      /* MWC theming. See https://github.com/material-components/material-web/blob/master/docs/theming.md */
+      --mdc-theme-primary: var(--primary-color);
+      --mdc-theme-secondary: var(--secondary-color);
     }
     ${_.map((font) => css`
       @font-face {
