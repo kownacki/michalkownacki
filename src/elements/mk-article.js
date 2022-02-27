@@ -41,7 +41,7 @@ export default class MkArticle extends LitElement {
         .rich=${this.rich}
         .richConfig=${this.richConfig}
         .multiline=${true}>
-        <div id="text" class="ck-content ${classMap(this.classes)}"></div>
+        <div id="text" class="ck-content ${this.classes ? classMap(this.classes) : ''}"></div>
       </mk-text>
       <mk-content-label .name=${'Text'}></mk-content-label>
     `;
