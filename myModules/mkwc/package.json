@@ -5,7 +5,7 @@
     "@ckeditor/ckeditor5-build-inline": "git+https://github.com/kownacki/ckeditor5-build-inline.git#stable",
     "@material/mwc-button": "^0.25.3",
     "@material/mwc-icon-button": "^0.25.3",
-    "lit-element": "^2.3.1",
+    "lit": "^2.2.0",
     "mk-frontend-web-utils": "git+https://github.com/kownacki/mk-frontend-web-utils.git#master",
     "mk-js-utils": "git+https://github.com/kownacki/mk-js-utils.git#master"
   }

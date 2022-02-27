@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css} from 'lit';
 import {staticElement} from 'mk-frontend-web-utils/lit';
 import sharedStyles from "../styles/shared-styles";
 import ckContent from '../styles/ck-content.js';

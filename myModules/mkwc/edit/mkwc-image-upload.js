@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css} from 'lit';
 import {sleep} from 'mk-js-utils';
 
 customElements.define('mkwc-image-upload', class extends LitElement {

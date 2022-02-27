@@ -4,7 +4,7 @@ window.storage = firebase.storage();
 
 auth.onAuthStateChanged((user) => {window.loggedIn = Boolean(user)});
 
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css} from 'lit';
 import sharedStyles from './styles/shared-styles.js';
 import './elements/mk-header.js';
 import './elements/mk-page.js';

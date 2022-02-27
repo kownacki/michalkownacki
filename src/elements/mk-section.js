@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css} from 'lit';
 import {staticElement} from 'mk-frontend-web-utils/lit';
 import sharedStyles from '../styles/shared-styles.js';
 import fb from '../utils/firebase.js';

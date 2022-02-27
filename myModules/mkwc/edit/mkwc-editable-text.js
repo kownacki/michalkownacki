@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css} from 'lit';
 import '@material/mwc-button';
 import {moveOutFromShadowDom} from 'mk-frontend-web-utils/moveOutFromShadowDom';
 import '../mkwc-loading-dots.js';

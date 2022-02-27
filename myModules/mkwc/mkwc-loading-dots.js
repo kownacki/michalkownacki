@@ -1,5 +1,5 @@
-import {LitElement, html, css, unsafeCSS} from 'lit-element';
-import {unsafeHTML} from 'lit-html/directives/unsafe-html.js';
+import {LitElement, html, css, unsafeCSS} from 'lit';
+import {unsafeHTML} from 'lit/directives/unsafe-html.js';
 import {loadingDots} from 'mk-frontend-web-utils/loadingDots';
 
 export default class MkwcLoadingDots extends LitElement {

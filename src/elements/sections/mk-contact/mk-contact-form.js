@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css} from 'lit';
 import '@material/mwc-icon-button';
 import '@material/mwc-textfield';
 import 'mkwc/fixes/mwc-textarea-fixed.js';

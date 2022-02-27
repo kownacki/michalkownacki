@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css} from 'lit';
 import sharedStyles from "../../src/styles/shared-styles";
 import ckContent from '../../src/styles/ck-content.js'
 import dbSyncMixin from './dbSyncMixin.js';

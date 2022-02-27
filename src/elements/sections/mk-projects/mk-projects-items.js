@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css} from 'lit';
 import './mk-projects-item.js';
 import fb from '../../../utils/firebase.js';
 

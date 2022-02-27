@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css} from 'lit';
 import '@material/mwc-icon-button';
 import './mk-header/mk-header-subnav.js';
 import './mk-header/mk-header-logo.js';

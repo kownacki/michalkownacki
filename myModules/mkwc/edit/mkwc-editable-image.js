@@ -1,4 +1,4 @@
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css} from 'lit';
 import {fitAndCompress} from 'mk-frontend-web-utils/fitAndCompress';
 import {readBlobOrFile} from 'mk-frontend-web-utils/readBlobOrFile';
 import '../fixes/mwc-icon-button-fixed.js';

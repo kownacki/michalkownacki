@@ -1,4 +1,4 @@
-import {css} from 'lit-element';
+import {css} from 'lit';
 
 // todo is this fixed text shadow necessary?
 // 1. Allows adding
