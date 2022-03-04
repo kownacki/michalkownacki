@@ -69,7 +69,7 @@ export default class extends LitElement {
         align-items: center;
         justify-content: center;
         color: white;
-        --mdc-icon-fixed-text-shadow: 0 0 10px var(--divider-color);
+        --mdc-icon-fixed-shadow: 0 0 10px var(--divider-color);
         --mdc-icon-size: 48px;
       }
       .container:hover mwc-icon-button-fixed {

@@ -1,13 +1,12 @@
 import {css} from 'lit';
 
-// todo is this fixed text shadow necessary?
-// 1. Allows adding
+// 1. Allows adding icon shadow
 export default (MwcIcon) =>
   class extends MwcIcon {
     static get styles() {
       return [super.styles, css`
         button {
-          text-shadow: var(--mdc-icon-fixed-text-shadow);
+          text-shadow: var(--mdc-icon-fixed-shadow);
         }
       `];
     }
