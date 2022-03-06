@@ -1,9 +1,11 @@
 .firebase/
+.idea/
 dist/
 node_modules/
 
-# Logsindex.html
+# Logs
 logs
 *.log
 npm-debug.log*
 firebase-debug.log*
+.DS_Store
