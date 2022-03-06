@@ -1,5 +1,5 @@
 import {LitElement, html, css} from 'lit';
-import {removeHtml} from 'mk-frontend-web-utils/removeHtml';
+import {removeHtml} from 'mk-frontend-web-utils/removeHtml.js';
 import dbSyncMixin from 'mkwc/dbSyncMixin.js';
 import sharedStyles from '../styles/shared-styles.js';
 import fb from '../utils/firebase.js';

@@ -1,6 +1,6 @@
 import {LitElement, html, css} from 'lit';
-import sharedStyles from "../../src/styles/shared-styles";
-import ckContent from '../../src/styles/ck-content.js'
+import ckContent from '../../src/styles/ck-content.js';
+import sharedStyles from '../../src/styles/shared-styles.js';
 import dbSyncMixin from './dbSyncMixin.js';
 import './edit/mkwc-image.js';
 import './edit/mkwc-text.js';

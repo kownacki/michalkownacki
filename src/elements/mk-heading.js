@@ -1,9 +1,9 @@
 import {LitElement, html, css} from 'lit';
-import {staticElement} from 'mk-frontend-web-utils/lit';
-import sharedStyles from "../styles/shared-styles";
+import {staticElement} from 'mk-frontend-web-utils/lit.js';
 import ckContent from '../styles/ck-content.js';
-import './mkwc/mk-text.js';
+import sharedStyles from "../styles/shared-styles.js";
 import './mk-content-label.js';
+import './mkwc/mk-text.js';
 
 export default class MkHeading extends LitElement {
   static get properties() {

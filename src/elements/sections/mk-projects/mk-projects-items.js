@@ -1,6 +1,6 @@
 import {LitElement, html, css} from 'lit';
-import './mk-projects-item.js';
 import fb from '../../../utils/firebase.js';
+import './mk-projects-item.js';
 
 customElements.define('mk-projects-items', class extends LitElement {
   static get properties() {

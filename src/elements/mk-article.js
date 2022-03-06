@@ -1,6 +1,6 @@
 import {LitElement, html, css} from 'lit';
-import {classMap} from 'lit/directives/class-map';
-import sharedStyles from "../styles/shared-styles";
+import {classMap} from 'lit/directives/class-map.js';
+import sharedStyles from "../styles/shared-styles.js";
 import ckContent from '../styles/ck-content.js';
 import './mkwc/mk-text.js';
 import './mk-content-label.js';

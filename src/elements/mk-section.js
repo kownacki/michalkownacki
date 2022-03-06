@@ -1,12 +1,12 @@
 import {LitElement, html, css} from 'lit';
-import {staticElement} from 'mk-frontend-web-utils/lit';
+import {staticElement} from 'mk-frontend-web-utils/lit.js';
 import sharedStyles from '../styles/shared-styles.js';
 import fb from '../utils/firebase.js';
 import './mk-heading.js';
-import './sections/mk-projects.js';
-import './sections/mk-how-i-create.js';
 import './sections/mk-cms.js';
 import './sections/mk-contact.js';
+import './sections/mk-how-i-create.js';
+import './sections/mk-projects.js';
 
 customElements.define('mk-section', class extends LitElement {
   static get properties() {

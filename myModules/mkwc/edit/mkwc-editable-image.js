@@ -1,6 +1,6 @@
 import {LitElement, html, css} from 'lit';
-import {fitAndCompress} from 'mk-frontend-web-utils/fitAndCompress';
-import {readBlobOrFile} from 'mk-frontend-web-utils/readBlobOrFile';
+import {fitAndCompress} from 'mk-frontend-web-utils/fitAndCompress.js';
+import {readBlobOrFile} from 'mk-frontend-web-utils/readBlobOrFile.js';
 import '../fixes/mwc-icon-button-fixed.js';
 import '../mkwc-loading-dots.js';
 import './mkwc-image-upload.js';

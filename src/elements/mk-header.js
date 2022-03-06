@@ -1,7 +1,7 @@
 import {LitElement, html, css} from 'lit';
 import '@material/mwc-icon-button';
-import './mk-header/mk-header-subnav.js';
 import './mk-header/mk-header-logo.js';
+import './mk-header/mk-header-subnav.js';
 
 customElements.define('mk-header', class extends LitElement {
   static get properties() {

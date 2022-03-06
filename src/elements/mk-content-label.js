@@ -1,6 +1,6 @@
 import {LitElement, html, css} from 'lit';
 import sharedStyles from '../styles/shared-styles.js';
-import loggedInMixin from '../utils/loggedInMixin.js'
+import loggedInMixin from '../utils/loggedInMixin.js';
 
 customElements.define('mk-content-label', class extends loggedInMixin('_loggedIn', LitElement) {
   static get properties() {
