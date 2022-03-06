@@ -1,5 +1,6 @@
 import fs from 'fs';
 import _ from 'lodash/fp.js';
+import materialColors from 'material-colors';
 import {noopTag} from 'mk-js-utils';
 import {apiKey, headerHeight, namePrefix} from '../config.js';
 import analyticsScript from './generateIndex/analyticsScript.js';
@@ -73,13 +74,13 @@ const indexHtml = `
       --secondary-color: #263238;
       --secondary-color-rgb: 117, 117, 117;
       --text-color: var(--secondary-color);
-      --placeholder-color: var(--paper-grey-500);
+      --placeholder-color: ${materialColors.grey['500']}; /* md-grey-500 */
       --placeholder-color-rgb: 158, 158, 158;
       --divider-color: rgba(0, 0, 0, 0.12);
       --grey-text: rgba(0, 0, 0, 0.6);
-      --error-color: var(--paper-red-800);
-      --correct-color: var(--paper-green-800);
-      --logotype-color: #84979E;
+      --error-color: ${materialColors.red['800']}; /* md-red-800 */
+      --correct-color: ${materialColors.green['800']}; /* md-green-800 */
+      --logotype-color: #84979e;
       --logotype-color-filter: invert(73%) sepia(6%) saturate(853%) hue-rotate(150deg) brightness(91%) contrast(79%);
       --header-height: ${headerHeight}px;
       --layer-header: 100;
