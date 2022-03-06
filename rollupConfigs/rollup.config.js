@@ -1,8 +1,8 @@
+import {nodeResolve} from '@rollup/plugin-node-resolve';
 import copy from 'rollup-plugin-copy';
 import del from 'rollup-plugin-delete';
-import resolve from 'rollup-plugin-node-resolve';
-import {terser} from 'rollup-plugin-terser';
 import minifyHTML from 'rollup-plugin-minify-html-literals';
+import {terser} from 'rollup-plugin-terser';
 import {namePrefix} from '../config.js';
 
 export default [{
@@ -21,7 +21,7 @@ export default [{
         {src: 'node_modules/@ckeditor', dest: 'dist/node_modules'},
       ],
     }),
-    resolve(),
+    nodeResolve(),
     minifyHTML(),
     terser(),
   ],
@@ -37,7 +37,7 @@ export default [{
     format: 'module',
   },
   plugins: [
-    resolve(),
+    nodeResolve(),
     minifyHTML(),
     terser(),
   ],
@@ -48,7 +48,7 @@ export default [{
     format: 'module',
   },
   plugins: [
-    resolve(),
+    nodeResolve(),
     minifyHTML(),
     terser(),
   ],
