@@ -1,4 +1,4 @@
-import MkwcText from 'mkwc/edit/mkwc-text.js';
+import {MkwcText} from 'mkwc/edit/mkwc-text.js';
 import {headerHeight, ckeditorBaloonHeight} from '../../../config.js';
 import fb from '../../utils/firebase.js';
 import loggedInMixin from '../../utils/loggedInMixin.js';

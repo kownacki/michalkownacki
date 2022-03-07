@@ -1,4 +1,4 @@
-import MkwcImage from 'mkwc/edit/mkwc-image.js';
+import {MkwcImage} from 'mkwc/edit/mkwc-image.js';
 import fb from '../../utils/firebase.js';
 import loggedInMixin from '../../utils/loggedInMixin.js';
 
