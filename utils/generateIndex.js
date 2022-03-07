@@ -92,6 +92,9 @@ const indexHtml = `
       /* MWC theming. See https://github.com/material-components/material-web/blob/master/docs/theming.md */
       --mdc-theme-primary: var(--primary-color);
       --mdc-theme-secondary: var(--secondary-color);
+      /* mkwc */
+      --mkwc-editable-image-icon-button-shadow-color: var(--divider-color);
+      --mkwc-editable-text-font-available-color: var(--primary-color);
     }
     ${_.map((font) => css`
       @font-face {

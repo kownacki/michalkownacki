@@ -3,6 +3,7 @@ import {fitAndCompress} from 'mk-frontend-web-utils/fitAndCompress.js';
 import {readBlobOrFile} from 'mk-frontend-web-utils/readBlobOrFile.js';
 import '../fixes/mwc-icon-button-fixed.js';
 import '../mkwc-loading-dots.js';
+import {sharedStyles} from '../styles.js';
 import './mkwc-image-upload.js';
 
 export default class extends LitElement {
@@ -20,7 +21,7 @@ export default class extends LitElement {
     };
   }
   static get styles() {
-    return css`
+    return [sharedStyles, css`
       :host {
         display: block;
       }
@@ -32,7 +33,7 @@ export default class extends LitElement {
         height: 100%;
       }
       :host(:not([not-empty])) .container {
-        background: rgba(var(--placeholder-color-rgb), 0.5);
+        background: var(--mkwc-editable-image-placeholder-color, var(--_mkwc-placeholder-color));
       }
       :host([presize]:not([not-empty])) {
         height: 250px;
@@ -69,14 +70,14 @@ export default class extends LitElement {
         align-items: center;
         justify-content: center;
         color: white;
-        --mdc-icon-fixed-shadow: 0 0 10px var(--divider-color);
+        --mdc-icon-fixed-shadow: 0 0 10px var(--mkwc-editable-image-icon-button-shadow-color);
         --mdc-icon-size: 48px;
       }
       .container:hover mwc-icon-button-fixed {
         display: flex;
         cursor: pointer;
       }
-    `;
+    `];
   }
   render() {
     return html`

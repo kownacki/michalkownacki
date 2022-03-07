@@ -2,6 +2,7 @@ import {LitElement, html, css} from 'lit';
 import '@material/mwc-button';
 import {moveOutFromShadowDom} from 'mk-frontend-web-utils/moveOutFromShadowDom.js';
 import '../mkwc-loading-dots.js';
+import {sharedStyles} from '../styles.js';
 
 export default class extends LitElement {
   static get properties() {
@@ -77,8 +78,9 @@ export default class extends LitElement {
         fontColor: {
           colors: [
             {
-              color: 'var(--primary-color)',
-              label: 'Primary'
+              // todo add customizing colors
+              color: 'var(--mkwc-editable-text-font-available-color)',
+              label: 'Color',
             },
           ],
           columns: 1,
@@ -86,7 +88,7 @@ export default class extends LitElement {
           // ...
         },
         mediaEmbed: {
-          previewsInData: true
+          previewsInData: true,
         },
         link: {
           decorators: [
@@ -94,17 +96,17 @@ export default class extends LitElement {
               mode: 'manual',
               label: 'Downloadable',
               attributes: {
-                download: 'download'
-              }
+                download: 'download',
+              },
             },
             {
                mode: 'manual',
                label: 'Open in a new tab',
                attributes: {
                  target: '_blank',
-               }
-             }
-          ]
+               },
+             },
+          ],
         },
         ...(this.richConfig === 'heading' ? {
               removePlugins: _.flow([
@@ -169,7 +171,7 @@ export default class extends LitElement {
     }
   }
   static get styles() {
-    return css`
+    return [sharedStyles, css`
       :host {
         display: block;
         position: relative;
@@ -191,7 +193,7 @@ export default class extends LitElement {
       }
       :host(:not([not-empty])) ::slotted(:not(:focus)) {
         /*todo background only to #editable */
-        background: rgba(var(--placeholder-color-rgb), 0.5);
+        background: var(--mkwc-editable-text-placeholder-color, var(--_mkwc-placeholder-color));
       }
       .edit {
         margin-top: 5px;
@@ -211,7 +213,7 @@ export default class extends LitElement {
         --mdc-theme-on-primary: black;
         margin-left: 10px;
       }
-    `;
+    `];
   }
   render() {
     return html`
