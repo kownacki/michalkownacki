@@ -21,7 +21,6 @@ customElements.define('mk-app', class extends LitElement {
     return html`
       <mk-header
         id="header"
-        .selected=${this._path}
         @open-drawer=${() => this.shadowRoot.getElementById('drawer').open()}>
       </mk-header>
       <mk-page .uid=${'landing'}></mk-page>
