@@ -82,15 +82,15 @@ customElements.define('mk-projects-item', class extends LitElement {
         .ready=${this.ready}>
       </mk-heading>
       <div class="image-container">
+        ${'' /*todo object-position and smart clipping */}
         <mk-image
-          .presize=${true}
-          .fit=${'scale-down'}
-          .maxWidth=${600}
-          .maxHeight=${400}
           .path=${this.path && this.path.extend('image')}
           .noGet=${true}
           .image=${_.get('image', this.project)}
-          .ready=${this.ready}>
+          .ready=${this.ready}
+          .fit=${'scale-down'}
+          .maxWidth=${600}
+          .maxHeight=${400}>
         </mk-image>
         <div class="links-container">
           <div class="links bigger-text">
